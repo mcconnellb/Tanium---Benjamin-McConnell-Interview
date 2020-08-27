@@ -1,0 +1,590 @@
+[08/26/2020 11:44:12 PM]-INFO>     SNOWAppInterrogator> <module>> Line 223: Initializing
+[08/26/2020 11:44:12 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:44:12 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all problem records...
+[08/26/2020 11:45:02 PM]-INFO>     SNOWAppInterrogator> <module>> Line 223: Initializing
+[08/26/2020 11:45:02 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:45:02 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all problem records...
+[08/26/2020 11:45:02 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/problem (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10c28aa10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:45:34 PM]-INFO>     SNOWAppInterrogator> <module>> Line 223: Initializing
+[08/26/2020 11:45:34 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:45:34 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all problem records...
+[08/26/2020 11:46:00 PM]-INFO>     SNOWAppInterrogator> <module>> Line 223: Initializing
+[08/26/2020 11:46:00 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:46:00 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all problem records...
+[08/26/2020 11:46:00 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: None
+[08/26/2020 11:47:17 PM]-INFO>     SNOWAppInterrogator> <module>> Line 226: Initializing
+[08/26/2020 11:47:17 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:47:17 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all problem records...
+[08/26/2020 11:47:17 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/problem (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107123ed0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:47:22 PM]-INFO>     SNOWAppInterrogator> <module>> Line 226: Initializing
+[08/26/2020 11:47:22 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:47:22 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all problem records...
+[08/26/2020 11:47:24 PM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 127: Successfully retrieved all problem records 
+[08/26/2020 11:47:24 PM]-INFO>     SNOWAppInterrogator> main> Line 41: Retrieving all problem Business Rules...
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 127: Successfully retrieved all problem records 
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 43: Successfully retrieved all problem Business Rules:
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 47: 1. SNC - ITIL - Close Related
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 47: 2. Copy State to Problem State
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 47: 3. SNC - ITIL - Resolve Related Incidents
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 47: 4. insert_problem
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 47: 5. Copy Problem State to State
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 47: 6. problem events
+[08/26/2020 11:47:30 PM]-INFO>     SNOWAppInterrogator> main> Line 51: Generating new class from Servicenow problem schema...
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: : collection
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: category: choice
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: cause_notes: html
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: confirmed_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: confirmed_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: duplicate_of: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: first_reported_by_task: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: fix_communicated_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: fix_communicated_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: fix_notes: html
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: known_error: boolean
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: major_problem: boolean
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: problem_state: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: related_incidents: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: reopened_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: reopened_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: reopen_count: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: resolution_code: choice
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: resolved_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: resolved_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: review_outcome: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: rfc: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: subcategory: choice
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_id: GUID
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: workaround: html
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: workaround_applied: boolean
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: workaround_communicated_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: workaround_communicated_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: : collection
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: active: boolean
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: activity_due: due_date
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: additional_assignee_list: glide_list
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: approval: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: approval_history: journal
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: approval_set: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: assigned_to: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: assignment_group: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: business_duration: glide_duration
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: business_service: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: calendar_duration: glide_duration
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: closed_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: closed_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: close_notes: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: cmdb_ci: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: comments: journal_input
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: comments_and_work_notes: journal_list
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: company: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: contact_type: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: contract: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: correlation_display: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: correlation_id: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: delivery_plan: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: delivery_task: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: description: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: due_date: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: escalation: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: expected_start: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: follow_up: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: group_list: glide_list
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: impact: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: knowledge: boolean
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: location: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: made_sla: boolean
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: number: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: opened_at: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: opened_by: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: order: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: parent: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: priority: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: reassignment_count: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: rejection_goto: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: service_offering: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: short_description: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sla_due: due_date
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: state: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_class_name: sys_class_name
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_created_by: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_created_on: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_domain: domain_id
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_domain_path: domain_path
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_id: GUID
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_mod_count: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_updated_by: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: sys_updated_on: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: time_worked: timer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: upon_approval: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: upon_reject: string
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: urgency: integer
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: user_input: user_input
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: variables: variables
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: watch_list: glide_list
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: wf_activity: reference
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: work_end: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: work_notes: journal_input
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: work_notes_list: glide_list
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> classFactory> Line 220: work_start: glide_date_time
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> main> Line 53: Successfull created new class:  <class '__main__.problem'>
+[08/26/2020 11:47:32 PM]-INFO>     SNOWAppInterrogator> main> Line 56: Creating new problem record...
+[08/26/2020 11:47:44 PM]-INFO>     SNOWAppInterrogator> main> Line 58: Successfully created newObject:  {'result': {'first_reported_by_task': '', 'parent': '', 'made_sla': 'true', 'watch_list': '', 'fix_communicated_by': '', 'upon_reject': 'cancel', 'sys_updated_on': '2020-08-27 05:48:04', 'cause_notes': '', 'approval_history': '', 'number': 'PRB0040009', 'resolved_by': '', 'sys_updated_by': 'admin', 'opened_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'user_input': '', 'sys_created_on': '2020-08-27 05:48:04', 'sys_domain': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user_group/global', 'value': 'global'}, 'state': '101', 'sys_created_by': 'admin', 'knowledge': 'false', 'order': '', 'major_problem': 'false', 'closed_at': '', 'cmdb_ci': '', 'delivery_plan': '', 'contract': '', 'impact': '2', 'active': 'true', 'work_notes_list': '', 'business_service': '', 'priority': '3', 'sys_domain_path': '/', 'rfc': '', 'time_worked': '', 'expected_start': '', 'opened_at': '2020-08-27 05:48:04', 'business_duration': '', 'group_list': '', 'work_end': '', 'resolved_at': '', 'approval_set': '', 'subcategory': '', 'work_notes': '', 'reopened_at': '', 'short_description': 'The sky is falling!', 'correlation_display': '', 'delivery_task': '', 'work_start': '', 'assignment_group': '', 'known_error': 'false', 'additional_assignee_list': '', 'description': '', 'calendar_duration': '', 'close_notes': '', 'service_offering': '', 'sys_class_name': 'problem', 'closed_by': '', 'follow_up': '', 'workaround': '', 'sys_id': '05752332db361010f858294648961960', 'contact_type': '', 'reopened_by': '', 'resolution_code': '', 'urgency': '2', 'company': '', 'reassignment_count': '0', 'confirmed_at': '', 'related_incidents': '0', 'activity_due': '', 'assigned_to': '', 'workaround_communicated_by': '', 'review_outcome': '', 'comments': '', 'fix_communicated_at': '', 'approval': 'not requested', 'sla_due': '', 'comments_and_work_notes': '', 'due_date': '', 'problem_state': '101', 'sys_mod_count': '0', 'reopen_count': '0', 'duplicate_of': '', 'sys_tags': '', 'escalation': '0', 'upon_approval': 'proceed', 'confirmed_by': '', 'correlation_id': '', 'location': '', 'workaround_communicated_at': '', 'category': '', 'fix_notes': '', 'workaround_applied': 'false'}}
+[08/26/2020 11:47:44 PM]-INFO>     SNOWAppInterrogator> main> Line 60: Completed Script execution
+[08/26/2020 11:47:53 PM]-INFO>     SNOWAppInterrogator> <module>> Line 226: Initializing
+[08/26/2020 11:47:53 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:47:53 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:49:53 PM]-INFO>     SNOWAppInterrogator> <module>> Line 226: Initializing
+[08/26/2020 11:49:53 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:49:53 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:49:54 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.cm', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1056c8a90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:50:49 PM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/26/2020 11:50:49 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:50:49 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:50:49 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.cm', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x104434990>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:51:03 PM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/26/2020 11:51:03 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:51:03 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:51:03 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.cm', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10389ff10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:51:18 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:51:18 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:51:18 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:51:18 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.cm', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x108021e90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:51:42 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:51:42 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:51:42 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:51:42 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-nowm', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10aeeffd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:52:27 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:52:27 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:52:27 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:53:05 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:53:05 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:53:05 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:55:14 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:55:14 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:55:14 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:55:14 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x107eeb9d0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:55:36 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:55:36 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:55:36 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:55:36 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10bd6ae50>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:55:51 PM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/26/2020 11:55:51 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:55:51 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:55:51 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10cb57f10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:57:10 PM]-INFO>     SNOWAppInterrogator> <module>> Line 227: Initializing
+[08/26/2020 11:57:10 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:57:10 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:57:10 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10603ea10>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:57:17 PM]-INFO>     SNOWAppInterrogator> <module>> Line 227: Initializing
+[08/26/2020 11:57:17 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:57:17 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:57:17 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x10ca10dd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:57:19 PM]-INFO>     SNOWAppInterrogator> <module>> Line 227: Initializing
+[08/26/2020 11:57:19 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:57:19 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/26/2020 11:57:19 PM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 115: HTTPSConnectionPool(host='dev87586.service-now.com', port=443): Max retries exceeded with url: //api/now/table/proble (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x110e1ca90>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+[08/26/2020 11:57:21 PM]-INFO>     SNOWAppInterrogator> <module>> Line 227: Initializing
+[08/26/2020 11:57:21 PM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/26/2020 11:57:21 PM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:02:25 AM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/27/2020 12:02:25 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:02:25 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:02:26 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble
+[08/27/2020 12:02:36 AM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/27/2020 12:02:36 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:02:36 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:02:37 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble
+[08/27/2020 12:04:33 AM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/27/2020 12:04:33 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:04:33 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:04:34 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble
+[08/27/2020 12:04:52 AM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/27/2020 12:04:52 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:04:52 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:04:53 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: {'error': {'message': 'Invalid table proble', 'detail': None}, 'status': 'failure'}
+[08/27/2020 12:06:13 AM]-INFO>     SNOWAppInterrogator> <module>> Line 230: Initializing
+[08/27/2020 12:06:13 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:06:13 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:06:13 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble:{'error': {'message': 'Invalid table proble', 'detail': None}, 'status': 'failure'}
+[08/27/2020 12:10:20 AM]-INFO>     SNOWAppInterrogator> <module>> Line 237: Initializing
+[08/27/2020 12:10:20 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:10:20 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:10:21 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble:{'error': {'message': 'Invalid table proble', 'detail': None}, 'status': 'failure'}
+[08/27/2020 12:11:29 AM]-INFO>     SNOWAppInterrogator> <module>> Line 237: Initializing
+[08/27/2020 12:11:29 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:11:29 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:11:30 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble:{'error': {'message': 'Invalid table proble', 'detail': None}, 'status': 'failure'}
+[08/27/2020 12:11:50 AM]-INFO>     SNOWAppInterrogator> <module>> Line 231: Initializing
+[08/27/2020 12:11:50 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:11:50 AM]-INFO>     SNOWAppInterrogator> main> Line 31: Retrieving all proble records...
+[08/27/2020 12:11:51 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 116: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble:{'error': {'message': 'Invalid table proble', 'detail': None}, 'status': 'failure'}
+[08/27/2020 12:23:13 AM]-INFO>     SNOWAppInterrogator> <module>> Line 263: Initializing
+[08/27/2020 12:23:13 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:23:13 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all proble records...
+[08/27/2020 12:23:15 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 114: 400 Client Error: Bad Request for url: https://dev87586.service-now.com//api/now/table/proble:{'error': {'message': 'Invalid table proble', 'detail': None}, 'status': 'failure'}
+[08/27/2020 12:23:26 AM]-INFO>     SNOWAppInterrogator> <module>> Line 263: Initializing
+[08/27/2020 12:23:26 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:23:26 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all change_request records...
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 131: Successfully retrieved all change_request records 
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all change_request records...
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 131: Successfully retrieved all change_request records 
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 1. change reopen
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 2. Notify CI workflow of approval
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 3. Insert Change Phases
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 4. Calculate Risk
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 5. insert_change
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 6. System Deploy Approved
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> main> Line 47: Generating new class from Servicenow change_request schema...
+[08/27/2020 12:23:28 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 222: Retreiving schema for change_request table...
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 245: Successfully retreived schema for change_request table.
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: : collection
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: backout_plan: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_date: glide_date
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_delegate: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_recommendation: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_required: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: category: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: change_plan: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: close_code: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: conflict_last_run: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: conflict_status: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: end_date: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: implementation_plan: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: justification: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: on_hold: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: on_hold_reason: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: on_hold_task: glide_list
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: outside_maintenance_schedule: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: phase: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: phase_state: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: production_system: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reason: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: requested_by: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: requested_by_date: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: review_comments: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: review_date: glide_date
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: review_status: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: risk: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: risk_impact_analysis: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: scope: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: start_date: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: std_change_producer_version: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_id: GUID
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: test_plan: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: type: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: unauthorized: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: : collection
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: active: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: activity_due: due_date
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: additional_assignee_list: glide_list
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval_history: journal
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval_set: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: assigned_to: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: assignment_group: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_duration: glide_duration
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_service: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: calendar_duration: glide_duration
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: closed_at: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: closed_by: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: close_notes: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cmdb_ci: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: comments: journal_input
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: comments_and_work_notes: journal_list
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: company: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: contact_type: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: contract: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: correlation_display: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: correlation_id: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: delivery_plan: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: delivery_task: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: description: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: due_date: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: escalation: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: expected_start: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: follow_up: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: group_list: glide_list
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: impact: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: knowledge: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: location: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: made_sla: boolean
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: number: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: opened_at: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: opened_by: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: order: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: parent: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: priority: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reassignment_count: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: rejection_goto: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: service_offering: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: short_description: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sla_due: due_date
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: state: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_class_name: sys_class_name
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_created_by: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_created_on: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_domain: domain_id
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_domain_path: domain_path
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_id: GUID
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_mod_count: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_updated_by: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_updated_on: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: time_worked: timer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: upon_approval: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: upon_reject: string
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: urgency: integer
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: user_input: user_input
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: variables: variables
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: watch_list: glide_list
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: wf_activity: reference
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_end: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_notes: journal_input
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_notes_list: glide_list
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_start: glide_date_time
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> main> Line 49: Successfull created new class:  <class '__main__.change_request'>
+[08/27/2020 12:23:29 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 167: Creating change_request record...
+[08/27/2020 12:23:30 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 190: Successfully created change_request record 
+[08/27/2020 12:23:30 AM]-INFO>     SNOWAppInterrogator> main> Line 53: {'result': {'parent': '', 'reason': '', 'watch_list': '', 'upon_reject': 'cancel', 'sys_updated_on': '2020-08-27 06:23:51', 'type': 'normal', 'approval_history': '', 'number': 'CHG0030017', 'test_plan': '', 'cab_delegate': '', 'requested_by_date': '', 'state': '-5', 'sys_created_by': 'admin', 'knowledge': 'false', 'order': '', 'phase': 'requested', 'cmdb_ci': '', 'delivery_plan': '', 'contract': '', 'impact': '2', 'active': 'true', 'work_notes_list': '', 'priority': '4', 'sys_domain_path': '/', 'cab_recommendation': '', 'production_system': 'false', 'review_date': '', 'business_duration': '', 'group_list': '', 'requested_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'change_plan': '', 'approval_set': '', 'implementation_plan': '', 'end_date': '', 'short_description': 'The sky is falling!', 'correlation_display': '', 'delivery_task': '', 'work_start': '', 'additional_assignee_list': '', 'outside_maintenance_schedule': 'false', 'std_change_producer_version': '', 'service_offering': '', 'sys_class_name': 'change_request', 'closed_by': '', 'follow_up': '', 'reassignment_count': '0', 'review_status': '', 'assigned_to': '', 'start_date': '', 'sla_due': '', 'comments_and_work_notes': '', 'escalation': '0', 'upon_approval': 'proceed', 'correlation_id': '', 'made_sla': 'true', 'backout_plan': '', 'conflict_status': 'Not Run', 'sys_updated_by': 'admin', 'opened_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'user_input': '', 'sys_created_on': '2020-08-27 06:23:51', 'on_hold_task': '', 'sys_domain': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user_group/global', 'value': 'global'}, 'closed_at': '', 'review_comments': '', 'business_service': '', 'time_worked': '', 'expected_start': '', 'opened_at': '2020-08-27 06:23:51', 'work_end': '', 'phase_state': 'open', 'cab_date': '', 'work_notes': '', 'close_code': '', 'assignment_group': '', 'description': '', 'on_hold_reason': '', 'calendar_duration': '', 'close_notes': '', 'sys_id': '19ade3f6db361010f858294648961993', 'contact_type': '', 'cab_required': 'false', 'urgency': '2', 'scope': '3', 'company': '', 'justification': '', 'activity_due': '', 'comments': '', 'approval': 'not requested', 'due_date': '', 'sys_mod_count': '0', 'on_hold': 'false', 'sys_tags': '', 'conflict_last_run': '', 'unauthorized': 'false', 'location': '', 'risk': '3', 'category': 'Other', 'risk_impact_analysis': ''}}
+[08/27/2020 12:23:30 AM]-INFO>     SNOWAppInterrogator> main> Line 55: Completed Script execution
+[08/27/2020 12:25:16 AM]-INFO>     SNOWAppInterrogator> <module>> Line 263: Initializing
+[08/27/2020 12:25:16 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:25:16 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all change_request records...
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 131: Successfully retrieved all change_request records 
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all change_request records...
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 131: Successfully retrieved all change_request records 
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 1. change reopen
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 2. Notify CI workflow of approval
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 3. Insert Change Phases
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 4. Calculate Risk
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 5. insert_change
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 6. System Deploy Approved
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> main> Line 47: Generating new class from Servicenow change_request schema...
+[08/27/2020 12:25:18 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 222: Retreiving schema for change_request table...
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 245: Successfully retreived schema for change_request table.
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: : collection
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: backout_plan: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_date: glide_date
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_delegate: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_recommendation: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cab_required: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: category: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: change_plan: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: close_code: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: conflict_last_run: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: conflict_status: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: end_date: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: implementation_plan: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: justification: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: on_hold: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: on_hold_reason: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: on_hold_task: glide_list
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: outside_maintenance_schedule: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: phase: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: phase_state: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: production_system: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reason: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: requested_by: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: requested_by_date: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: review_comments: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: review_date: glide_date
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: review_status: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: risk: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: risk_impact_analysis: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: scope: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: start_date: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: std_change_producer_version: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_id: GUID
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: test_plan: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: type: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: unauthorized: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: : collection
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: active: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: activity_due: due_date
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: additional_assignee_list: glide_list
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval_history: journal
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval_set: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: assigned_to: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: assignment_group: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_duration: glide_duration
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_service: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: calendar_duration: glide_duration
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: closed_at: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: closed_by: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: close_notes: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cmdb_ci: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: comments: journal_input
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: comments_and_work_notes: journal_list
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: company: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: contact_type: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: contract: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: correlation_display: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: correlation_id: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: delivery_plan: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: delivery_task: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: description: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: due_date: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: escalation: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: expected_start: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: follow_up: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: group_list: glide_list
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: impact: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: knowledge: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: location: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: made_sla: boolean
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: number: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: opened_at: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: opened_by: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: order: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: parent: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: priority: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reassignment_count: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: rejection_goto: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: service_offering: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: short_description: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sla_due: due_date
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: state: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_class_name: sys_class_name
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_created_by: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_created_on: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_domain: domain_id
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_domain_path: domain_path
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_id: GUID
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_mod_count: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_updated_by: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_updated_on: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: time_worked: timer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: upon_approval: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: upon_reject: string
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: urgency: integer
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: user_input: user_input
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: variables: variables
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: watch_list: glide_list
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: wf_activity: reference
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_end: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_notes: journal_input
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_notes_list: glide_list
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_start: glide_date_time
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> main> Line 49: Successfull created new class:  <class '__main__.change_request'>
+[08/27/2020 12:25:19 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 167: Creating change_request record...
+[08/27/2020 12:25:20 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 190: Successfully created change_request record 
+[08/27/2020 12:25:20 AM]-INFO>     SNOWAppInterrogator> main> Line 53: {'result': {'parent': '', 'reason': '', 'watch_list': '', 'upon_reject': 'cancel', 'sys_updated_on': '2020-08-27 06:25:41', 'type': 'normal', 'approval_history': '', 'number': 'CHG0030018', 'test_plan': '', 'cab_delegate': '', 'requested_by_date': '', 'state': '-5', 'sys_created_by': 'admin', 'knowledge': 'false', 'order': '', 'phase': 'requested', 'cmdb_ci': '', 'delivery_plan': '', 'contract': '', 'impact': '2', 'active': 'true', 'work_notes_list': '', 'priority': '4', 'sys_domain_path': '/', 'cab_recommendation': '', 'production_system': 'false', 'review_date': '', 'business_duration': '', 'group_list': '', 'requested_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'change_plan': '', 'approval_set': '', 'implementation_plan': '', 'end_date': '', 'short_description': 'The sky is falling!', 'correlation_display': '', 'delivery_task': '', 'work_start': '', 'additional_assignee_list': '', 'outside_maintenance_schedule': 'false', 'std_change_producer_version': '', 'service_offering': '', 'sys_class_name': 'change_request', 'closed_by': '', 'follow_up': '', 'reassignment_count': '0', 'review_status': '', 'assigned_to': '', 'start_date': '', 'sla_due': '', 'comments_and_work_notes': '', 'escalation': '0', 'upon_approval': 'proceed', 'correlation_id': '', 'made_sla': 'true', 'backout_plan': '', 'conflict_status': 'Not Run', 'sys_updated_by': 'admin', 'opened_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'user_input': '', 'sys_created_on': '2020-08-27 06:25:41', 'on_hold_task': '', 'sys_domain': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user_group/global', 'value': 'global'}, 'closed_at': '', 'review_comments': '', 'business_service': '', 'time_worked': '', 'expected_start': '', 'opened_at': '2020-08-27 06:25:41', 'work_end': '', 'phase_state': 'open', 'cab_date': '', 'work_notes': '', 'close_code': '', 'assignment_group': '', 'description': '', 'on_hold_reason': '', 'calendar_duration': '', 'close_notes': '', 'sys_id': '4c1eefb6db361010f858294648961934', 'contact_type': '', 'cab_required': 'false', 'urgency': '2', 'scope': '3', 'company': '', 'justification': '', 'activity_due': '', 'comments': '', 'approval': 'not requested', 'due_date': '', 'sys_mod_count': '0', 'on_hold': 'false', 'sys_tags': '', 'conflict_last_run': '', 'unauthorized': 'false', 'location': '', 'risk': '3', 'category': 'Other', 'risk_impact_analysis': ''}}
+[08/27/2020 12:25:20 AM]-INFO>     SNOWAppInterrogator> main> Line 55: Completed Script execution
+[08/27/2020 12:25:40 AM]-INFO>     SNOWAppInterrogator> <module>> Line 263: Initializing
+[08/27/2020 12:25:40 AM]-INFO>     SNOWAppInterrogator> main> Line 28: Beginning Execution
+[08/27/2020 12:25:40 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all incident records...
+[08/27/2020 12:25:41 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 131: Successfully retrieved all incident records 
+[08/27/2020 12:25:41 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 108: Retrieving all incident records...
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 131: Successfully retrieved all incident records 
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 1. Incident State Change to In Progress
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 2. SNC - ITIL - Close Related
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 3. Incident Create Knowledge
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 4. Copy Incident State to State
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 5. incident query
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 6. Company Projection
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 7. Change state on closed Insert
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 8. Prevent Recursion of Parent Incident
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 9. Copy State to Incident State
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 10. incident reopen
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 11. Clear On Hold Reason
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 12. incident events
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 13. insert_incident
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 43: 14. incident autoclose
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> main> Line 47: Generating new class from Servicenow incident schema...
+[08/27/2020 12:25:42 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 222: Retreiving schema for incident table...
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 245: Successfully retreived schema for incident table.
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: : collection
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_stc: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: calendar_stc: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: caller_id: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: category: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: caused_by: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: child_incidents: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: close_code: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: hold_reason: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: incident_state: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: notify: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: parent_incident: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: problem_id: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reopened_by: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reopened_time: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reopen_count: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: resolved_at: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: resolved_by: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: rfc: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: severity: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: subcategory: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_id: GUID
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: : collection
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: active: boolean
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: activity_due: due_date
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: additional_assignee_list: glide_list
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval_history: journal
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: approval_set: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: assigned_to: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: assignment_group: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_duration: glide_duration
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: business_service: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: calendar_duration: glide_duration
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: closed_at: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: closed_by: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: close_notes: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: cmdb_ci: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: comments: journal_input
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: comments_and_work_notes: journal_list
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: company: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: contact_type: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: contract: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: correlation_display: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: correlation_id: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: delivery_plan: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: delivery_task: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: description: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: due_date: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: escalation: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: expected_start: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: follow_up: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: group_list: glide_list
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: impact: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: knowledge: boolean
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: location: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: made_sla: boolean
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: number: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: opened_at: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: opened_by: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: order: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: parent: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: priority: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: reassignment_count: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: rejection_goto: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: service_offering: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: short_description: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sla_due: due_date
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: state: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_class_name: sys_class_name
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_created_by: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_created_on: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_domain: domain_id
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_domain_path: domain_path
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_id: GUID
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_mod_count: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_updated_by: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: sys_updated_on: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: time_worked: timer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: upon_approval: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: upon_reject: string
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: urgency: integer
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: user_input: user_input
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: variables: variables
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: watch_list: glide_list
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: wf_activity: reference
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_end: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_notes: journal_input
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_notes_list: glide_list
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 257: work_start: glide_date_time
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> main> Line 49: Successfull created new class:  <class '__main__.incident'>
+[08/27/2020 12:25:43 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 167: Creating incident record...
+[08/27/2020 12:25:44 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 190: Successfully created incident record 
+[08/27/2020 12:25:44 AM]-INFO>     SNOWAppInterrogator> main> Line 53: {'result': {'parent': '', 'made_sla': 'true', 'caused_by': '', 'watch_list': '', 'upon_reject': 'cancel', 'sys_updated_on': '2020-08-27 06:26:05', 'child_incidents': '0', 'hold_reason': '', 'approval_history': '', 'number': 'INC0010002', 'resolved_by': '', 'sys_updated_by': 'admin', 'opened_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'user_input': '', 'sys_created_on': '2020-08-27 06:26:05', 'sys_domain': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user_group/global', 'value': 'global'}, 'state': '1', 'sys_created_by': 'admin', 'knowledge': 'false', 'order': '', 'calendar_stc': '', 'closed_at': '', 'cmdb_ci': '', 'delivery_plan': '', 'contract': '', 'impact': '2', 'active': 'true', 'work_notes_list': '', 'business_service': '', 'priority': '3', 'sys_domain_path': '/', 'rfc': '', 'time_worked': '', 'expected_start': '', 'opened_at': '2020-08-27 06:26:05', 'business_duration': '', 'group_list': '', 'work_end': '', 'caller_id': '', 'reopened_time': '', 'resolved_at': '', 'approval_set': '', 'subcategory': '', 'work_notes': '', 'short_description': 'The sky is falling!', 'close_code': '', 'correlation_display': '', 'delivery_task': '', 'work_start': '', 'assignment_group': '', 'additional_assignee_list': '', 'business_stc': '', 'description': '', 'calendar_duration': '', 'close_notes': '', 'notify': '1', 'service_offering': '', 'sys_class_name': 'incident', 'closed_by': '', 'follow_up': '', 'parent_incident': '', 'sys_id': '0e2eef7adb361010f858294648961962', 'contact_type': '', 'reopened_by': '', 'incident_state': '1', 'urgency': '2', 'problem_id': '', 'company': '', 'reassignment_count': '0', 'activity_due': '', 'assigned_to': '', 'severity': '3', 'comments': '', 'approval': 'not requested', 'sla_due': '', 'comments_and_work_notes': '', 'due_date': '', 'sys_mod_count': '0', 'reopen_count': '0', 'sys_tags': '', 'escalation': '0', 'upon_approval': 'proceed', 'correlation_id': '', 'location': '', 'category': 'inquiry'}}
+[08/27/2020 12:25:44 AM]-INFO>     SNOWAppInterrogator> main> Line 55: Completed Script execution
