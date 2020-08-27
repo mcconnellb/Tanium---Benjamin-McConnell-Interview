@@ -4,6 +4,7 @@ Author:  Benjamin McConnell
 Created: 26 AUG 2020
 Last Updated: 27 AUG 2020
 
+
 Description:
 This script was written to demonstrate the authors ability to interface 
 with ServiceNow's REST APIs. There are a 4 REST API calls that aim
