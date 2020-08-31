@@ -7,7 +7,7 @@ Last Updated: 31 AUG 2020
 
 Description:
 This script was written to demonstrate the authors ability to interface 
-with ServiceNow's REST APIs. There are a 4 REST API calls that aim
+with ServiceNow's REST APIs. There are 4 REST API calls that aim
 to demonstrate proficiency in a variety of programming skills. 
 """
 #Import dependencies
@@ -57,7 +57,7 @@ def main():
 ###################################################################################
 def parseArguments():
     '''
-    This function configure the command line paramater parser. It sets a help description
+    This function configures the command line parameter parser. It sets a help description
     for the script and enables the user to get instructions on parameter usage at the
     command line. 
     '''
@@ -150,7 +150,7 @@ def getAllTableRecords(args, application, query=''):
             return data
 
 def getBusinessRules(args, application):
-    '''This function retrieves business rules for the given applcation 
+    '''This function retrieves business rules for the given application 
     by querying the Table API. 
     '''
     BUSINESS_RULE_TABLE_NAME = 'sys_script'
@@ -172,7 +172,7 @@ def identifyCustomBusinessRules(busRules):
 
 def createRecord (args, application, query=''):
     '''This function creates a new record in the given ServiceNow application table.
-    It does this leveraging the post method on the Table API. 
+    It does this by leveraging the post method on the Table API. 
     '''
     #Prepare request
     url = '%s/api/now/table/%s' % (args.instance, application)
@@ -225,7 +225,7 @@ def createRecord (args, application, query=''):
 
 def BuildXML() : 
     '''This function builds an XML payload that can be passed during a post request to
-    the ServiceNow Table API. 
+    the ServiceNow Table API. This is used when creating records.
     '''
     root = ET.Element("request") 
     entry = ET.Element("entry") 
