@@ -588,3 +588,240 @@
 [08/27/2020 12:25:44 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 190: Successfully created incident record 
 [08/27/2020 12:25:44 AM]-INFO>     SNOWAppInterrogator> main> Line 53: {'result': {'parent': '', 'made_sla': 'true', 'caused_by': '', 'watch_list': '', 'upon_reject': 'cancel', 'sys_updated_on': '2020-08-27 06:26:05', 'child_incidents': '0', 'hold_reason': '', 'approval_history': '', 'number': 'INC0010002', 'resolved_by': '', 'sys_updated_by': 'admin', 'opened_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'user_input': '', 'sys_created_on': '2020-08-27 06:26:05', 'sys_domain': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user_group/global', 'value': 'global'}, 'state': '1', 'sys_created_by': 'admin', 'knowledge': 'false', 'order': '', 'calendar_stc': '', 'closed_at': '', 'cmdb_ci': '', 'delivery_plan': '', 'contract': '', 'impact': '2', 'active': 'true', 'work_notes_list': '', 'business_service': '', 'priority': '3', 'sys_domain_path': '/', 'rfc': '', 'time_worked': '', 'expected_start': '', 'opened_at': '2020-08-27 06:26:05', 'business_duration': '', 'group_list': '', 'work_end': '', 'caller_id': '', 'reopened_time': '', 'resolved_at': '', 'approval_set': '', 'subcategory': '', 'work_notes': '', 'short_description': 'The sky is falling!', 'close_code': '', 'correlation_display': '', 'delivery_task': '', 'work_start': '', 'assignment_group': '', 'additional_assignee_list': '', 'business_stc': '', 'description': '', 'calendar_duration': '', 'close_notes': '', 'notify': '1', 'service_offering': '', 'sys_class_name': 'incident', 'closed_by': '', 'follow_up': '', 'parent_incident': '', 'sys_id': '0e2eef7adb361010f858294648961962', 'contact_type': '', 'reopened_by': '', 'incident_state': '1', 'urgency': '2', 'problem_id': '', 'company': '', 'reassignment_count': '0', 'activity_due': '', 'assigned_to': '', 'severity': '3', 'comments': '', 'approval': 'not requested', 'sla_due': '', 'comments_and_work_notes': '', 'due_date': '', 'sys_mod_count': '0', 'reopen_count': '0', 'sys_tags': '', 'escalation': '0', 'upon_approval': 'proceed', 'correlation_id': '', 'location': '', 'category': 'inquiry'}}
 [08/27/2020 12:25:44 AM]-INFO>     SNOWAppInterrogator> main> Line 55: Completed Script execution
+[08/27/2020 12:47:04 AM]-INFO>     SNOWAppInterrogator> <module>> Line 264: Initializing
+[08/27/2020 12:47:04 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/27/2020 12:47:04 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/27/2020 12:47:06 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/27/2020 12:47:06 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 44: 1. change reopen
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 44: 2. Notify CI workflow of approval
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 44: 3. Insert Change Phases
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 44: 4. Calculate Risk
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 44: 5. insert_change
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 44: 6. System Deploy Approved
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> main> Line 48: Generating new class from Servicenow change_request schema...
+[08/27/2020 12:47:07 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 223: Retreiving schema for change_request table...
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> PullClassSchema> Line 246: Successfully retreived schema for change_request table.
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: : collection
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: backout_plan: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: cab_date: glide_date
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: cab_delegate: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: cab_recommendation: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: cab_required: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: category: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: change_plan: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: close_code: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: conflict_last_run: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: conflict_status: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: end_date: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: implementation_plan: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: justification: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: on_hold: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: on_hold_reason: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: on_hold_task: glide_list
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: outside_maintenance_schedule: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: phase: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: phase_state: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: production_system: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: reason: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: requested_by: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: requested_by_date: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: review_comments: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: review_date: glide_date
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: review_status: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: risk: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: risk_impact_analysis: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: scope: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: start_date: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: std_change_producer_version: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_id: GUID
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: test_plan: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: type: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: unauthorized: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: : collection
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: active: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: activity_due: due_date
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: additional_assignee_list: glide_list
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: approval: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: approval_history: journal
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: approval_set: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: assigned_to: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: assignment_group: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: business_duration: glide_duration
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: business_service: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: calendar_duration: glide_duration
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: closed_at: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: closed_by: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: close_notes: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: cmdb_ci: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: comments: journal_input
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: comments_and_work_notes: journal_list
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: company: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: contact_type: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: contract: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: correlation_display: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: correlation_id: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: delivery_plan: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: delivery_task: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: description: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: due_date: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: escalation: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: expected_start: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: follow_up: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: group_list: glide_list
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: impact: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: knowledge: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: location: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: made_sla: boolean
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: number: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: opened_at: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: opened_by: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: order: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: parent: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: priority: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: reassignment_count: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: rejection_goto: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: service_offering: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: short_description: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sla_due: due_date
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: state: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_class_name: sys_class_name
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_created_by: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_created_on: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_domain: domain_id
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_domain_path: domain_path
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_id: GUID
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_mod_count: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_updated_by: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: sys_updated_on: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: time_worked: timer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: upon_approval: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: upon_reject: string
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: urgency: integer
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: user_input: user_input
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: variables: variables
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: watch_list: glide_list
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: wf_activity: reference
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: work_end: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: work_notes: journal_input
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: work_notes_list: glide_list
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> classFactory> Line 258: work_start: glide_date_time
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> main> Line 50: Successfull created new class:  <class '__main__.change_request'>
+[08/27/2020 12:47:08 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 168: Creating change_request record...
+[08/27/2020 12:47:09 AM]-INFO>     SNOWAppInterrogator> createRecord> Line 191: Successfully created change_request record 
+[08/27/2020 12:47:09 AM]-INFO>     SNOWAppInterrogator> main> Line 54: {'result': {'parent': '', 'reason': '', 'watch_list': '', 'upon_reject': 'cancel', 'sys_updated_on': '2020-08-27 06:47:30', 'type': 'normal', 'approval_history': '', 'number': 'CHG0030019', 'test_plan': '', 'cab_delegate': '', 'requested_by_date': '', 'state': '-5', 'sys_created_by': 'admin', 'knowledge': 'false', 'order': '', 'phase': 'requested', 'cmdb_ci': '', 'delivery_plan': '', 'contract': '', 'impact': '2', 'active': 'true', 'work_notes_list': '', 'priority': '4', 'sys_domain_path': '/', 'cab_recommendation': '', 'production_system': 'false', 'review_date': '', 'business_duration': '', 'group_list': '', 'requested_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'change_plan': '', 'approval_set': '', 'implementation_plan': '', 'end_date': '', 'short_description': 'The sky is falling!', 'correlation_display': '', 'delivery_task': '', 'work_start': '', 'additional_assignee_list': '', 'outside_maintenance_schedule': 'false', 'std_change_producer_version': '', 'service_offering': '', 'sys_class_name': 'change_request', 'closed_by': '', 'follow_up': '', 'reassignment_count': '0', 'review_status': '', 'assigned_to': '', 'start_date': '', 'sla_due': '', 'comments_and_work_notes': '', 'escalation': '0', 'upon_approval': 'proceed', 'correlation_id': '', 'made_sla': 'true', 'backout_plan': '', 'conflict_status': 'Not Run', 'sys_updated_by': 'admin', 'opened_by': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user/6816f79cc0a8016401c5a33be04be441', 'value': '6816f79cc0a8016401c5a33be04be441'}, 'user_input': '', 'sys_created_on': '2020-08-27 06:47:30', 'on_hold_task': '', 'sys_domain': {'link': 'https://dev87586.service-now.com//api/now/table/sys_user_group/global', 'value': 'global'}, 'closed_at': '', 'review_comments': '', 'business_service': '', 'time_worked': '', 'expected_start': '', 'opened_at': '2020-08-27 06:47:30', 'work_end': '', 'phase_state': 'open', 'cab_date': '', 'work_notes': '', 'close_code': '', 'assignment_group': '', 'description': '', 'on_hold_reason': '', 'calendar_duration': '', 'close_notes': '', 'sys_id': 'a70333badb361010f85829464896192d', 'contact_type': '', 'cab_required': 'false', 'urgency': '2', 'scope': '3', 'company': '', 'justification': '', 'activity_due': '', 'comments': '', 'approval': 'not requested', 'due_date': '', 'sys_mod_count': '0', 'on_hold': 'false', 'sys_tags': '', 'conflict_last_run': '', 'unauthorized': 'false', 'location': '', 'risk': '3', 'category': 'Other', 'risk_impact_analysis': ''}}
+[08/27/2020 12:47:09 AM]-INFO>     SNOWAppInterrogator> main> Line 56: Completed Script execution
+[08/31/2020 08:24:33 AM]-INFO>     SNOWAppInterrogator> <module>> Line 264: Initializing
+[08/31/2020 08:24:33 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:24:33 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:24:34 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:25:24 AM]-INFO>     SNOWAppInterrogator> <module>> Line 264: Initializing
+[08/31/2020 08:25:24 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:25:24 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:25:24 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:27:17 AM]-INFO>     SNOWAppInterrogator> <module>> Line 265: Initializing
+[08/31/2020 08:27:17 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:27:17 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:27:18 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 133: Successfully retrieved all change_request records 
+[08/31/2020 08:27:39 AM]-INFO>     SNOWAppInterrogator> <module>> Line 265: Initializing
+[08/31/2020 08:27:39 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:27:39 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:27:40 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 133: Successfully retrieved all change_request records 
+[08/31/2020 08:28:23 AM]-INFO>     SNOWAppInterrogator> <module>> Line 265: Initializing
+[08/31/2020 08:28:23 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:28:23 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:28:23 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 133: Successfully retrieved all change_request records 
+[08/31/2020 08:29:42 AM]-INFO>     SNOWAppInterrogator> <module>> Line 265: Initializing
+[08/31/2020 08:29:42 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:29:42 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:29:42 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 133: Successfully retrieved all change_request records 
+[08/31/2020 08:31:34 AM]-INFO>     SNOWAppInterrogator> <module>> Line 268: Initializing
+[08/31/2020 08:31:34 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:31:34 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:31:35 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 136: Successfully retrieved all change_request records 
+[08/31/2020 08:31:47 AM]-INFO>     SNOWAppInterrogator> <module>> Line 268: Initializing
+[08/31/2020 08:31:47 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:31:47 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:31:48 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 136: Successfully retrieved all change_request records 
+[08/31/2020 08:33:38 AM]-INFO>     SNOWAppInterrogator> <module>> Line 272: Initializing
+[08/31/2020 08:33:38 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:33:38 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:33:39 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 133: Successfully retrieved all change_request records 
+[08/31/2020 08:34:10 AM]-INFO>     SNOWAppInterrogator> <module>> Line 272: Initializing
+[08/31/2020 08:34:10 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:34:10 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:34:10 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:35:25 AM]-INFO>     SNOWAppInterrogator> <module>> Line 274: Initializing
+[08/31/2020 08:35:25 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:35:25 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:35:26 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:36:01 AM]-INFO>     SNOWAppInterrogator> <module>> Line 275: Initializing
+[08/31/2020 08:36:01 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:36:01 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:36:01 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:36:13 AM]-INFO>     SNOWAppInterrogator> <module>> Line 275: Initializing
+[08/31/2020 08:36:13 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:36:13 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:36:13 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:36:37 AM]-INFO>     SNOWAppInterrogator> <module>> Line 276: Initializing
+[08/31/2020 08:36:37 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:36:37 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:36:38 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 133: Successfully retrieved all change_request records 
+[08/31/2020 08:38:49 AM]-INFO>     SNOWAppInterrogator> <module>> Line 275: Initializing
+[08/31/2020 08:38:49 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:38:49 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:38:50 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:39:08 AM]-INFO>     SNOWAppInterrogator> <module>> Line 275: Initializing
+[08/31/2020 08:39:08 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:39:08 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:39:08 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:40:39 AM]-INFO>     SNOWAppInterrogator> <module>> Line 275: Initializing
+[08/31/2020 08:40:39 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:40:39 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:40:39 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:43:04 AM]-INFO>     SNOWAppInterrogator> <module>> Line 275: Initializing
+[08/31/2020 08:43:04 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:43:04 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:43:04 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:45:37 AM]-INFO>     SNOWAppInterrogator> <module>> Line 276: Initializing
+[08/31/2020 08:45:37 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:45:37 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:45:38 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 132: Successfully retrieved all change_request records 
+[08/31/2020 08:45:38 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 138: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:45:38 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 141: A json object was not returned.                 Verify that your instance is active and try again.
+[08/31/2020 08:48:04 AM]-INFO>     SNOWAppInterrogator> <module>> Line 299: Initializing
+[08/31/2020 08:48:04 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:48:04 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:48:05 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:48:05 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 141: A json object was not returned.                 Verify that your instance is active and try again.
+[08/31/2020 08:49:28 AM]-INFO>     SNOWAppInterrogator> <module>> Line 305: Initializing
+[08/31/2020 08:49:28 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:49:28 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:49:28 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:49:28 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 141: A json object was not returned.                 Verify that your instance is active and try again.
+[08/31/2020 08:52:37 AM]-INFO>     SNOWAppInterrogator> <module>> Line 308: Initializing
+[08/31/2020 08:52:37 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:52:37 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:52:37 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:52:37 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 141: A json object was not returned.                 Verify that your instance is active and try again.
+[08/31/2020 08:55:25 AM]-INFO>     SNOWAppInterrogator> <module>> Line 310: Initializing
+[08/31/2020 08:55:25 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:55:25 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:55:26 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:55:26 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 141: A json object was not returned.                 Verify that your instance is active and try again.
+[08/31/2020 08:57:33 AM]-INFO>     SNOWAppInterrogator> <module>> Line 310: Initializing
+[08/31/2020 08:57:33 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:57:33 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:57:33 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:57:33 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 141: A json object was not returned.                 Verify that your instance is active and try again.
+[08/31/2020 08:59:51 AM]-INFO>     SNOWAppInterrogator> <module>> Line 311: Initializing
+[08/31/2020 08:59:51 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 08:59:51 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 08:59:52 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 08:59:52 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 140: A json object was not returned. Verify that your instance is active and try again.
+[08/31/2020 09:00:27 AM]-INFO>     SNOWAppInterrogator> <module>> Line 311: Initializing
+[08/31/2020 09:00:27 AM]-INFO>     SNOWAppInterrogator> main> Line 29: Beginning Execution
+[08/31/2020 09:00:27 AM]-INFO>     SNOWAppInterrogator> getAllTableRecords> Line 109: Retrieving all change_request records...
+[08/31/2020 09:00:27 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 137: A problem occured decoding the response from ServiceNow.
+[08/31/2020 09:00:27 AM]-ERROR>     SNOWAppInterrogator> getAllTableRecords> Line 140: A json object was not returned. Verify that your instance is active and try again.

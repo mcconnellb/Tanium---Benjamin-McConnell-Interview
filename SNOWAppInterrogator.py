@@ -118,20 +118,36 @@ def getAllTableRecords(args, application, query=''):
 
     except requests.exceptions.ConnectionError as ec:
         log.error(ec)
-        print('There seems to be something wrong with your internet connection. \
-        Double check your connection and script parameters. -- %s' % ec)
+        print('There seems to be something wrong with your internet connection. '
+        'Double check your connection and script parameters. -- %s' % ec)
         exit()
-
+  
     except requests.exceptions.RequestException as e:
         log.error(e)
         print ('There is an issue with your connection to ServiceNow. -- %s' %e)
         exit()
  
-    #If successful, decode the json response
+    
     else:
-        log.info('Successfully retrieved all %s records ' % args.application)
-        data = response.json()
-        return data
+        #If successful, try to decode the json response
+        try:
+            data = response.json()
+
+        except json.decoder.JSONDecodeError as e:
+            log.error("A problem occured decoding the response from ServiceNow.")
+            print ("A problem occured decoding the response from ServiceNow.")
+            if response.headers['Content-Type'] == 'text/html':
+                log.error('A json object was not returned. '
+                'Verify that your instance is active and try again.')
+                print(
+                'A json object was not returned. Verify that your instance is'  
+                ' active and try again.'
+                )
+            exit()
+
+        else:
+            log.info('Successfully retrieved all %s records ' % args.application)
+            return data
 
 def getBusinessRules(args, application):
     '''This function retrieves business rules for the given applcation 
@@ -185,12 +201,27 @@ def createRecord (args, application, query=''):
         log.error(e)
         print ('There is an issue with your connection to ServiceNow. -- %s' %e)
         exit()
- 
-    #If successful, decode the json response
+
     else:
-        log.info('Successfully created %s record ' % args.application)
-        data = response.json()
-        return data
+        #If successful, try to decode the json response
+        try:
+            data = response.json()
+
+        except json.decoder.JSONDecodeError as e:
+            log.error("A problem occured decoding the response from ServiceNow.")
+            print ("A problem occured decoding the response from ServiceNow.")
+            if response.headers['Content-Type'] == 'text/html':
+                log.error('A json object was not returned. '
+                'Verify that your instance is active and try again.')
+                print(
+                'A json object was not returned. Verify that your instance is'  
+                ' active and try again.'
+                )
+            exit()
+
+        else:
+            log.info('Successfully retrieved all %s records ' % args.application)
+            return data
 
 def BuildXML() : 
     '''This function builds an XML payload that can be passed during a post request to
@@ -241,11 +272,27 @@ def PullClassSchema():
         print ('There is an issue with your connection to ServiceNow. -- %s' %e)
         exit()
  
-    #If successful, decode the json response
+
     else:
-        log.info('Successfully retreived schema for %s table.' % args.application)
-        data = response.json()
-        return data
+        #If successful, try to decode the json response
+        try:
+            data = response.json()
+
+        except json.decoder.JSONDecodeError as e:
+            log.error("A problem occured decoding the response from ServiceNow.")
+            print ("A problem occured decoding the response from ServiceNow.")
+            if response.headers['Content-Type'] == 'text/html':
+                log.error('A json object was not returned. '
+                'Verify that your instance is active and try again.')
+                print(
+                'A json object was not returned. Verify that your instance is'  
+                ' active and try again.'
+                )
+            exit()
+
+        else:
+            log.info('Successfully retrieved all %s records ' % args.application)
+            return data
 
 def classFactory(application):
     '''This function generates a python object class from the given 
@@ -266,5 +313,6 @@ args = parseArguments()
 url = '%s/api/now/table/%s' % (args.instance, args.application)
 
 #Execute main script
-main()
+if __name__ == "__main__":
+    main()
 
